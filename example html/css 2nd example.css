@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+color: rgb(58, 133, 104);
+}
+p{
+    color: brown;
+    text-align: left;
+    text-decoration: underline;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    line-height: 25px;
+}
+
+.font-white{
+    color: black;
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box-model{
+    height: 550px;
+    width: 80%;
+    background-color: aqua;
+margin: 10px 15px 20px 25px;
+    box-sizing: border-box;
+    border: 6px solid green;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    }
+    

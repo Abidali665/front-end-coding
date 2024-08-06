@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>css animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #float-wrapper{
+            width: 200%;
+            height: 400px;
+            background-color: gray;
+        padding: 5px;
+        }
+        #float-wrapper img{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            float: left;
+            text-align: justify;
+        }
+        #overflow-wrapper{
+            width: 20%;
+            height: 100px;
+            background-color:purple;
+            color: orange;
+            text-align: justify;
+            padding: 5px;
+            
+            overflow: scroll;
+        }
+        .transform-div{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: crimson;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            filter:grayscale(100%);
+           transition: filter 2s;
+        }
+        .transform-div img{
+            width: 150px;
+         height: 150px;
+         transform:translate3d(1rem, 0, 1rem);
+            
+        }
+        .transition{
+    height: 150px;
+    width: 300px;
+    background-color: orange;
+    transition: width 2s, height 3s, background-color 3s;
+}
+.transition:hover{
+    border-radius: 50%;
+    height: 300px;
+    width: 400px;
+    background-color: black;
+}
+.animation{
+    height: 150px;
+    width: 300px;
+    background-color: purple;
+    animation: myAnimation 10s;
+    
+}
+@keyframes myAnimation {
+    /* from{
+        background-color: black;
+    }to{
+        background-color: blue;
+    } */
+    0%{
+        background-color: black;
+    }25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: yellow;
+    }75%{
+        background-color: red;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id="float-wrapper">
+        <img src="data:image/jpeg;base64,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">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque maxime 
+            doloribus ducimus excepturi sed? Nesciunt tenetur fugit quisquam dolorem tempore magni, 
+            ducimus consequuntur quas autem eligendi sit sed cupiditate laborum hic, voluptatum voluptate dolor quasi nemo 
+            expedita commodi ratione illo dolores. Nostrum rerum quasi laudantium aut minus? Architecto fugit incidunt itaque v
+            
+        oluptates blanditiis eum, nemo sit temporibus maxime! Magnam tenetur molestias magni ipsum nisi alias illum, est 
+        veritatis quis rerum similique enim tempora explicabo odit iure aperiam soluta ex incidunt asperiores eveniet. Voluptatum 
+        culpa rem cumque totam ad modi molestiae, eius magnam. Earum aperiam, suscipit quaerat ullam blanditiis deleniti consequuntur
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="overflow-wrapper">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque maxime 
+        doloribus ducimus excepturi sed? Nesciunt tenetur fugit quisquam dolorem tempore magni, 
+        ducimus consequuntur quas autem eligendi sit sed cupiditate laborum hic, voluptatum voluptate dolor quasi nemo 
+        expedita commodi ratione illo dolores. Nostrum rerum quasi laudantium aut minus? Architecto fugit incidunt itaque v
+        
+    oluptates blanditiis eum, nemo sit temporibus maxime! Magnam tenetur molestias magni ipsum nisi alias illum, est 
+    veritatis quis rerum similique enim tempora explicabo odit iure aperiam soluta ex incidunt asperiores eveniet. Voluptatum 
+    culpa rem cumque totam ad modi molestiae, eius magnam. Earum aperiam, suscipit quaerat ullam blanditiis deleniti consequuntur
+    </p></div>
+    <br>
+    <br>
+    <br>
+    <div class="transform-div">
+            <img src="https://ph-files.imgix.net/c5bfc8eb-1109-43bd-b055-6f8bcddd595d.png?auto=format&fit=crop"  alt="">
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="transition"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="animation">hi every one</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

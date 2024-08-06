@@ -1,0 +1,21 @@
+<!--*{
+    background-color: aqua;
+}-->
+h1{
+    color: brown;
+}
+p{
+    background-color: aqua;
+}
+.custom{
+    text-transform: capitalize;
+}
+h2{
+    color: blue;
+}
+#h1{
+    color: yellow;
+
+div >p{
+    background-color: brown;
+}
